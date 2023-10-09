@@ -1,0 +1,99 @@
+Antonio Guiotto
+
+Front End Developer
+
+Barcelona, Spain
+
++34 661747744 · powerhydratoni@gmail.com
+
+linkedin.com/in/antonio-guiotto · github.com/palloncino
+
+Date of Birth: 20/03/1995
+
+
+Professional Summary
+
+ 
+Experienced Software Developer with a specialization in Front-end Technologies, React, JavaScript, and Typescript. Passionate about delivering high-quality, efficient, and scalable solutions. Looking forward to contributing to a dynamic team to develop innovative software applications.
+
+ 
+Work History
+
+ 
+
+Software Engineer
+
+Ovalx, Turin
+
+April 2022 — February 2023
+
+- Developed and maintained web applications using Typescript.
+- Utilized JIRA and Confluence for project management and documentation in an Agile team setup.
+- Collaborated with designers and QA team to ensure high-quality deliverables.
+- Implemented and maintained project management processes, contributing to high-quality code production for new projects.
+
+ 
+
+Front End Developer
+
+Sky, Remote Working
+
+February 2020 — August 2021
+
+- Maintained, fixed, and extended Vodafone's NowTV Front-end features within a React Redux context.
+
+ 
+
+Web Development Teacher
+
+ForAction, Bassano del Grappa
+
+May 2020 — June 2020
+
+- Conducted online classes, teaching about 20 students the fundamentals of web development.
+
+ 
+
+Front End Developer
+
+RED Software Systems, Milano
+
+December 2018 — January 2020
+
+- Built e-commerce front-end platforms using Polymer, following an Agile workflow.
+
+ 
+
+Education
+
+School of art in italy
+
+ 
+
+Key Skills
+
+ 
+
+- JavaScript
+- TypeScript
+- Git
+- NodeJs
+- React
+
+ 
+
+Hobbies
+
+ 
+
+- Engaging in calisthenics
+- Riding my bicycle around
+- Design
+- Music, Musician
+
+ 
+
+Certifications
+
+ 
+Youthpass - EVS
