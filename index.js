@@ -12,6 +12,9 @@ import { HNSWLib } from "langchain/vectorstores/hnswlib";
 
 dotenv.config()
 
+// Deploy script
+// aws lambda update-function-code --function-name ag-apis --s3-bucket ag-apis --s3-key Archive.zip
+
 // 5. Load local files such as .json and .txt from ./docs
 const loader = new DirectoryLoader("./docs", {
   ".json": (path) => new JSONLoader(path),
