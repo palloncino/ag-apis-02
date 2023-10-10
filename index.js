@@ -1,4 +1,5 @@
 import bodyParser from 'body-parser';
+import cors from "cors";
 import * as dotenv from 'dotenv';
 import express from 'express';
 import { RetrievalQAChain, loadQARefineChain } from "langchain/chains";
@@ -10,19 +11,34 @@ import { OpenAI } from "langchain/llms/openai";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { HNSWLib } from "langchain/vectorstores/hnswlib";
 
+// Deploy script
+// eb deploy prod-2
+
 dotenv.config()
 
-// Deploy script
-// aws lambda update-function-code --function-name ag-apis --s3-bucket ag-apis --s3-key Archive.zip
+const PORT = process.env.PORT || 4000;
 
-// 5. Load local files such as .json and .txt from ./docs
+const app = express();
+
+app.use(bodyParser.json());
+
+app.use(
+  cors({
+    origin: ["https://antonioguiotto.com", "http://localhost:3000"],
+    methods: ["POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "x-api-key"],
+    optionsSuccessStatus: 204,
+  })
+);
+
+// Load local files such as .json and .txt from ./docs
 const loader = new DirectoryLoader("./docs", {
   ".json": (path) => new JSONLoader(path),
   ".txt": (path) => new TextLoader(path)
 })
 
 
-// 6. Define a function to normalize the content of the documents
+// Define a function to normalize the content of the documents
 const normalizeDocuments = (docs) => {
   return docs.map((doc) => {
     if (typeof doc.pageContent === "string") {
@@ -35,14 +51,12 @@ const normalizeDocuments = (docs) => {
 
 const VECTOR_STORE_PATH = "Documents.index";
 
-// Initialize Express app
-const app = express();
-
-// Use body-parser middleware to parse JSON bodies
-app.use(bodyParser.json());
+app.get('/ping', (req, res) => {
+  res.status(200).send('pong');
+});
 
 // Create a POST endpoint to handle run requests
-app.post('/api/chat', async (req, res) => {
+app.post('/chat-local', async (req, res) => {
   try {
     // Get the prompt from the request body
     const { prompt } = req.body;
@@ -57,15 +71,15 @@ app.post('/api/chat', async (req, res) => {
     const response = await run([prompt]);
     
     // Send the response back to the client
-    res.send(response);
+
+    if (response.output_text) {
+      res.send({response: response.output_text});
+    }
   } catch (error) {
     console.error(error);
-    res.status(500).send({ error: 'Internal Server Error' });
+    res.status(500).send(error);
   }
 });
-
-// Define the port
-const PORT = process.env.PORT || 3000;
 
 // Start the server
 app.listen(PORT, () => {
@@ -91,7 +105,7 @@ export const run = async (params) => {
   const normalizedDocs = normalizeDocuments(docs);
   const splitDocs = await textSplitter.createDocuments(normalizedDocs);
 
-  // 8. Generate the vector store from the documents
+  // Generate the vector store from the documents
   vectorStore = await HNSWLib.fromDocuments(
     splitDocs,
     new OpenAIEmbeddings()
@@ -101,7 +115,7 @@ export const run = async (params) => {
   console.log("Vector store created.")
 
   console.log("Creating retrieval chain...")
-  // 9. Query the retrieval chain with the specified question
+  // Query the retrieval chain with the specified question
   // const chain = RetrievalQAChain.fromLLM(model, vectorStore.asRetriever())
 
   const chain = new RetrievalQAChain({
