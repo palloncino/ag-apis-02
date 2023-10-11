@@ -12,79 +12,79 @@ Date of Birth: 20/03/1995
 
 
 Professional Summary
-
- 
 Experienced Software Developer with a specialization in Front-end Technologies, React, JavaScript, and Typescript. Passionate about delivering high-quality, efficient, and scalable solutions. Looking forward to contributing to a dynamic team to develop innovative software applications.
 
  
 Work History
-
- 
-
 Software Engineer
-
 Ovalx, Turin
-
 April 2022 — February 2023
-
-- Developed and maintained web applications using Typescript.
+- Developed and maintained web applications using Typescript. 
+- Created new features for preexisting onboarding websites, namely a Profile panel, where you can edit the account, switching accounts, edit nicknames, edit email preferences, edit privacy settings, and more.
+- Project Management: owned the project, updating public board about project status weekly.
+- Daily Scrum: Taking part of daily scrum, updating on current status, updating on blockers.
+- Multiple pipelines per environment with either Bitbucket or Gitlab.
+- AWS extended knowledge. 
 - Utilized JIRA and Confluence for project management and documentation in an Agile team setup.
 - Collaborated with designers and QA team to ensure high-quality deliverables.
 - Implemented and maintained project management processes, contributing to high-quality code production for new projects.
+- Technology used were: React, Typescript, Webspack, Eslint, Babel, yarn, GIT, npm, shell scripting, SASS & more.
 
- 
+FrontEnd Engineer
 
-Front End Developer
+Company: a bank
+contract, b2b
+Vicenza, Italy (remote)
+Date: undefined
+Software developer
+Code generations
+- Developed new architecture for a bank, architecture using microservices, with micro app in modern React
+- Business own design system
+- In this project I was involved with senior developers that teached me about Typescript and VIM and Linux.
+- Maintained pre existing application for internal bank product.
 
-Sky, Remote Working
-
-February 2020 — August 2021
-
-- Maintained, fixed, and extended Vodafone's NowTV Front-end features within a React Redux context.
-
- 
+Software Engineer
+contract b2b
+Vicenza, Italy (remote)
+Date: undefined
+Software developer
+MoveworkForward
+- Developing new plugin for JIRA and Confluence, Atlassian
+- Writing code in Typescript
+- Knowledge of Azure Cloud
 
 Web Development Teacher
-
 ForAction, Bassano del Grappa
-
 May 2020 — June 2020
-
 - Conducted online classes, teaching about 20 students the fundamentals of web development.
-
+- Starting from HTML, to CSS, to JS.
+- the course was very useful for most of students
  
-
 Front End Developer
-
 RED Software Systems, Milano
-
 December 2018 — January 2020
-
 - Built e-commerce front-end platforms using Polymer, following an Agile workflow.
-
- 
+- High focus on quality of code, strict procedures.
+- Working with pure javascript, creation of internal modules, design systems.
+- Monorepo for multiple businesses.
+- Styling with SASS
 
 Education
 
 School of art in italy
 
- 
 
 Key Skills
-
- 
 
 - JavaScript
 - TypeScript
 - Git
 - NodeJs
 - React
-
  
 
 Hobbies
 
- 
 
 - Engaging in calisthenics
 - Riding my bicycle around
@@ -94,6 +94,5 @@ Hobbies
  
 
 Certifications
-
  
 Youthpass - EVS
