@@ -28,7 +28,7 @@ April 2022 — February 2023
 - Utilized JIRA and Confluence for project management and documentation in an Agile team setup.
 - Collaborated with designers and QA team to ensure high-quality deliverables.
 - Implemented and maintained project management processes, contributing to high-quality code production for new projects.
-- Technology used were: React, Typescript, Webspack, Eslint, Babel, yarn, GIT, npm, shell scripting, SASS & more.
+- Technology used were: React, Typescript, Webpack, Eslint, Babel, yarn, GIT, npm, shell scripting, SASS & more.
 
 FrontEnd Engineer
 
@@ -53,6 +53,16 @@ MoveworkForward
 - Writing code in Typescript
 - Knowledge of Azure Cloud
 
+Software Engineer
+NOWTV, Milan
+Date: undefined
+- Developed and maintained NOWTV application software running on Console (Opera Browser). 
+- Created new features tailored to Italian market.
+- Acquired experience in video streaming techniques.
+- Utilized management of issues based on priority (Waterfall).
+- Collaborated with Automation Test team to ensure high-quality deliverables.
+- Technology used were: React (Classes), Webpack, Redux, Eslint, Babel, yarn, GIT, npm, shell scripting, SASS & more, OIPF Video Standard.
+
 Web Development Teacher
 ForAction, Bassano del Grappa
 May 2020 — June 2020
@@ -68,6 +78,7 @@ December 2018 — January 2020
 - Working with pure javascript, creation of internal modules, design systems.
 - Monorepo for multiple businesses.
 - Styling with SASS
+- Backcompatibility checks, extra accessibility.
 
 Education
 
